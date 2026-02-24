@@ -36,16 +36,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-10">
           <div>
-            <h1 className="text-2xl sm:text-3xl font-bold">Task Dashboard</h1>
-            <p className="text-muted-foreground text-sm mt-1">
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Task Dashboard</h1>
+            <p className="text-muted-foreground text-sm mt-1.5">
               Stay organized, stay productive.
             </p>
           </div>
-          <Button onClick={() => setDialogOpen(true)} className="gap-2">
+          <Button onClick={() => setDialogOpen(true)} className="gap-2 shadow-sm">
             <Plus className="h-4 w-4" />
             <span className="hidden sm:inline">New Task</span>
           </Button>
@@ -55,8 +55,8 @@ const Index = () => {
         <SummaryCards {...summary} />
 
         {/* Filters + Task List */}
-        <div className="mt-8">
-          <div className="flex items-center justify-between mb-4">
+        <div className="mt-10">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
             <h2 className="font-semibold text-lg">Tasks</h2>
             <TaskFilters filters={filters} onChange={setFilters} />
           </div>
