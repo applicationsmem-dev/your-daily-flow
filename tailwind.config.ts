@@ -61,8 +61,19 @@ export default {
         },
         priority: {
           high: "hsl(var(--priority-high))",
+          "high-bg": "hsl(var(--priority-high-bg))",
           medium: "hsl(var(--priority-medium))",
+          "medium-bg": "hsl(var(--priority-medium-bg))",
           low: "hsl(var(--priority-low))",
+          "low-bg": "hsl(var(--priority-low-bg))",
+        },
+        status: {
+          todo: "hsl(var(--status-todo))",
+          "todo-bg": "hsl(var(--status-todo-bg))",
+          progress: "hsl(var(--status-progress))",
+          "progress-bg": "hsl(var(--status-progress-bg))",
+          completed: "hsl(var(--status-completed))",
+          "completed-bg": "hsl(var(--status-completed-bg))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
